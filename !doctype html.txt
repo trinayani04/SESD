@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurora College Fest 2025</title>
+  <meta name="description" content="Aurora College Fest — music, tech, culture & sports. Join us for three days of events, competitions, and workshops." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#0066ff;
+      --muted:#6b7280;
+      --bg:#0f172a;
+      --card:#0b1220;
+      --glass: rgba(255,255,255,0.04);
+      --radius:12px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071129 0%, #0b1220 100%);color:#e6eef8}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#00d4ff);display:flex;align-items:center;justify-content:center;font-weight:800;color:#042;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:28px}
+    .hero h1{font-size:32px;margin:0 0 10px}
+    .lead{color:var(--muted);margin-bottom:16px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+
+    /* Features */
+    .features{display:flex;gap:12px;margin-top:20px}
+    .feature{flex:1;padding:12px;border-radius:10px;background:var(--glass);text-align:center}
+    .feature h4{margin:8px 0 0}
+
+    /* Schedule */
+    section{margin-top:42px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px}
+
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px;text-align:left;border-bottom:1px dashed rgba(255,255,255,0.03)}
+
+    /* Speakers */
+    .speakers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .speaker{display:flex;gap:12px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,#112 40%, #223);display:flex;align-items:center;justify-content:center}
+
+    /* Events grid responsive */
+    .events{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .event{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent)}
+
+    /* Form */
+    form{display:grid;gap:10px}
+    input,select,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+    button{background:var(--accent);border:none;padding:10px 12px;border-radius:10px;color:#041;font-weight:700}
+
+    footer{margin-top:40px;padding:18px 0;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid,.speakers,.events{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:640px){
+      nav ul{display:none}
+      header{align-items:flex-start}
+      .container{padding:18px}
+      .grid,.speakers,.events{grid-template-columns:1fr}
+      .logo{width:42px;height:42px}
+      .hero h1{font-size:24px}
+    }
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .pill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <div style="font-weight:800">Aurora Fest</div>
+          <div class="muted" style="font-size:12px">Sept 18–20, 2025 · Aurora College</div>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#register" class="cta">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Aurora College Fest — Unite, Compete, Celebrate</h1>
+          <p class="lead">Three days of tech talks, cultural nights, live music, hackathons, and sports. Open to all college students. Free workshops — limited seats.</p>
+          <div class="features" role="list">
+            <div class="feature"><div class="pill">Live Music</div><h4>Battle of Bands</h4></div>
+            <div class="feature"><div class="pill">Tech</div><h4>Hackathon & Workshops</h4></div>
+            <div class="feature"><div class="pill">Culture</div><h4>Dance & Fine Arts</h4></div>
+          </div>
+
+          <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading" style="margin-top:20px">About</h2>
+            <p class="muted">Aurora Fest is our annual inter-college festival showcasing creativity, technology, and sportsmanship. Whether you're a coder, musician or athlete — there's something for you.</p>
+          </section>
+
+          <section id="schedule" aria-labelledby="schedule-heading">
+            <h2 id="schedule-heading" style="margin-top:18px">Schedule (Highlights)</h2>
+            <div class="grid">
+              <div class="card">
+                <h3>Day 1 — Tech & Workshops</h3>
+                <table aria-label="Day 1 schedule">
+                  <thead><tr><th>Time</th><th>Event</th></tr></thead>
+                  <tbody>
+                    <tr><td>09:00</td><td>Opening & Welcome</td></tr>
+                    <tr><td>10:00</td><td>Workshop: Intro to ML</td></tr>
+                    <tr><td>14:00</td><td>Hackathon Kickoff</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="card">
+                <h3>Day 2 — Culture Night</h3>
+                <table aria-label="Day 2 schedule">
+                  <tbody>
+                    <tr><td>10:00</td><td>Tech Talks</td></tr>
+                    <tr><td>18:00</td><td>Dance & Drama</td></tr>
+                    <tr><td>20:00</td><td>Concert: Headliner Band</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="card">
+                <h3>Day 3 — Sports & Finals</h3>
+                <table aria-label="Day 3 schedule">
+                  <tbody>
+                    <tr><td>08:00</td><td>Intercollege Football</td></tr>
+                    <tr><td>12:00</td><td>Hackathon Final Presentations</td></tr>
+                    <tr><td>17:00</td><td>Prize Distribution</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section id="speakers" aria-labelledby="speakers-heading">
+            <h2 id="speakers-heading" style="margin-top:22px">Speakers & Judges</h2>
+            <div class="speakers">
+              <div class="card speaker"><div class="avatar">MK</div><div><strong>Dr. Meera Kapoor</strong><div class="muted">AI Researcher - Keynote</div></div></div>
+              <div class="card speaker"><div class="avatar">RS</div><div><strong>Rohit Sharma</strong><div class="muted">Founder, Startup X</div></div></div>
+              <div class="card speaker"><div class="avatar">AL</div><div><strong>Asha Lal</strong><div class="muted">Performing Arts Head</div></div></div>
+            </div>
+          </section>
+
+        </div>
+
+        <aside class="hero-card" aria-labelledby="register">
+          <h3 id="register">Quick Register</h3>
+          <p class="muted">Reserve your seat for workshops and the concert. Free entry but limited capacity — registrations are per-person.</p>
+
+          <form id="regForm" onsubmit="handleRegister(event)">
+            <label for="name" class="muted" style="font-size:13px">Full name</label>
+            <input id="name" required placeholder="Your name" />
+
+            <label for="email" class="muted" style="font-size:13px">Email</label>
+            <input id="email" type="email" required placeholder="you@example.com" />
+
+            <label for="category" class="muted" style="font-size:13px">Category</label>
+            <select id="category" required>
+              <option value="student">Student</option>
+              <option value="volunteer">Volunteer</option>
+              <option value="guest">Guest</option>
+            </select>
+
+            <label for="interest" class="muted" style="font-size:13px">Interested in</label>
+            <select id="interest">
+              <option>Hackathon</option>
+              <option>Workshops</option>
+              <option>Music</option>
+              <option>Sports</option>
+            </select>
+
+            <button type="submit">Register</button>
+            <p id="regMsg" class="muted" style="font-size:13px;margin-top:8px"></p>
+          </form>
+
+          <div style="margin-top:16px;font-size:13px" class="muted">Venue: Aurora College Grounds<br/>Contact: events@aurora.edu</div>
+        </aside>
+      </section>
+
+      <section id="events" aria-labelledby="events-heading">
+        <h2 id="events-heading" style="margin-top:28px">Events</h2>
+        <div class="events">
+          <div class="event card"><strong>Hackathon</strong><div class="muted" style="font-size:13px">24-hour team hack. Prizes for best product & pitch.</div></div>
+          <div class="event card"><strong>Battle of Bands</strong><div class="muted" style="font-size:13px">Open to college bands. Auditions on Day 1.</div></div>
+          <div class="event card"><strong>Debate & Elocution</strong><div class="muted" style="font-size:13px">Intercollege rounds with judges from faculty.</div></div>
+          <div class="event card"><strong>Art & Photography</strong><div class="muted" style="font-size:13px">Exhibition and awards.</div></div>
+          <div class="event card"><strong>Sports Meet</strong><div class="muted" style="font-size:13px">Football, Basketball & Athletics.</div></div>
+          <div class="event card"><strong>Workshops</strong><div class="muted" style="font-size:13px">AI, Web Dev, UI/UX — hands-on sessions.</div></div>
+        </div>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" style="margin-top:28px">Contact & Venue</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Get in touch</h3>
+            <p class="muted">For sponsorship and partnerships email <a href="mailto:sponsor@aurora.edu">sponsor@aurora.edu</a></p>
+            <form onsubmit="event.preventDefault();alert('Thanks!');">
+              <input placeholder="Your message" aria-label="message" />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+          <div class="card">
+            <h3>Venue</h3>
+            <p class="muted">Aurora College · Main Campus · North Gate</p>
+            <div style="height:180px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:flex;align-items:center;justify-content:center">Map placeholder</div>
+          </div>
+          <div class="card">
+            <h3>Prizes & Rules</h3>
+            <ul class="muted">
+              <li>Teams max 4 for hackathon</li>
+              <li>Auditions precede performances</li>
+              <li>Code of conduct required for all participants</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+        <div>&copy; 2025 Aurora College · Built with ❤️</div>
+        <div class="muted">Follow: <a href="#">Instagram</a> · <a href="#">X</a> · <a href="#">YouTube</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // small client-side registration persistence (local-only)
+    function handleRegister(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const cat=document.getElementById('category').value;
+      const interest=document.getElementById('interest').value;
+      if(!name||!email){document.getElementById('regMsg').textContent='Please fill name & email';return}
+      // basic local-store
+      const regs=JSON.parse(localStorage.getItem('aurora_regs')||'[]');
+      regs.push({name,email,cat,interest,ts:new Date().toISOString()});
+      localStorage.setItem('aurora_regs',JSON.stringify(regs));
+      document.getElementById('regMsg').textContent='Registration saved locally — check your dashboard for details.';
+      document.getElementById('regForm').reset();
+    }
+
+    // progressive enhancement: show number of registrants if any
+    (function(){
+      const count=JSON.parse(localStorage.getItem('aurora_regs')||'[]').length;
+      if(count>0){
+        const p=document.createElement('p');p.className='muted';p.style.fontSize='13px';p.style.marginTop='10px';p.textContent=`${count} registrations so far (local)`;
+        document.querySelector('.hero-card').appendChild(p);
+      }
+    })();
+  </script>
+</body>
+</html>
